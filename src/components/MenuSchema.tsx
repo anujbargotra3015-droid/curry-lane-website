@@ -1,4 +1,4 @@
-import type { MenuSection } from "@/types/Menu";
+import type { MenuSection } from "@/types/menu";
 
 export default function MenuSchema({
   sections,
