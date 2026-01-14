@@ -60,10 +60,10 @@ export default function Testimonials() {
               </p>
             </div>
             
-            <div className="mt-8 border-t border-gray-200 pt-6 flex items-center gap-4">
-              <div className="h-12 w-12 flex-shrink-0 rounded-full bg-gray-300" />
+            {/* UPDATED FOOTER: Profile pic removed */}
+            <div className="mt-8 border-t border-gray-200 pt-6">
               <span className="text-xs font-bold uppercase tracking-widest text-[#EF2F2A]">
-                NAME OF THE PERSON
+                Aditya
               </span>
             </div>
           </div>
@@ -76,10 +76,10 @@ export default function Testimonials() {
               </p>
             </div>
 
-            <div className="mt-8 border-t border-gray-200 pt-6 flex items-center gap-4">
-              <div className="h-12 w-12 flex-shrink-0 rounded-full bg-gray-300" />
+            {/* UPDATED FOOTER: Profile pic removed */}
+            <div className="mt-8 border-t border-gray-200 pt-6">
               <span className="text-xs font-bold uppercase tracking-widest text-[#EF2F2A]">
-                NAME OF THE PERSON
+                Rahul
               </span>
             </div>
           </div>
@@ -92,10 +92,10 @@ export default function Testimonials() {
               </p>
             </div>
 
-            <div className="mt-8 border-t border-gray-200 pt-6 flex items-center gap-4">
-              <div className="h-12 w-12 flex-shrink-0 rounded-full bg-gray-300" />
+            {/* UPDATED FOOTER: Profile pic removed */}
+            <div className="mt-8 border-t border-gray-200 pt-6">
               <span className="text-xs font-bold uppercase tracking-widest text-[#EF2F2A]">
-                NAME OF THE PERSON
+                Anuj
               </span>
             </div>
           </div>

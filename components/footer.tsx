@@ -3,8 +3,6 @@
 import Link from "next/link";
 import {
   Instagram,
-  Facebook,
-  Twitter,
   MapPin,
   Phone,
   Mail,
@@ -40,15 +38,20 @@ export default function Footer() {
 
             {/* Social Icons */}
             <div className="flex gap-3">
-              {[Instagram, Facebook, Twitter].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-10 h-10 rounded-full bg-[#262626] flex items-center justify-center text-white hover:bg-[#DC2626] transition-colors duration-300"
-                >
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
+              {/* --- PASTE YOUR INSTAGRAM LINK HERE ---
+                  Replace "#" with your actual profile URL like "https://www.instagram.com/your_handle"
+              */}
+              <a
+                href="https://www.instagram.com/currylanemohali" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-[#262626] flex items-center justify-center text-white hover:bg-[#DC2626] transition-colors duration-300"
+                aria-label="Follow us on Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              
+              {/* Removed Facebook & Twitter icons as requested */}
             </div>
           </div>
 
@@ -83,20 +86,20 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#DC2626] mt-0.5 shrink-0" />
                 <span className="leading-relaxed">
-                  123 Spice Route, Flavor District
+                  Ground Floor, SCO 41 42 , Aero Arcade , G Block
                   <br />
-                  New Delhi, India 110001
+                  Mohali Punjab Pin 140603
                 </span>
               </li>
 
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#DC2626] shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 9501501222</span>
               </li>
 
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#DC2626] shrink-0" />
-                <span>hello@currylane.com</span>
+                <span>Currylanemohali@gmail.com</span>
               </li>
             </ul>
           </div>
