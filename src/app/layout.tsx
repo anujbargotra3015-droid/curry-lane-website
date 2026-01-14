@@ -1,13 +1,14 @@
+// app/layout.tsx
+// NO 'use client' here!
+
 import "./globals.css";
 import type { Metadata } from "next";
 
-import Navbar from "@/components/Navbar";
-import MobileNavbar from "@/components/mobilenavbar"; // Mobile Navbar
-import Footer from "@/components/footer"; // Check if this file is Footer.tsx or footer.tsx
 import { Playfair_Display, DM_Sans } from "next/font/google";
 import { siteMetadata } from "./metadata";
+import ClientLayout from "./ClientLayout";
 
-/* Fonts */
+// Fonts
 const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
@@ -20,7 +21,7 @@ const dmSans = DM_Sans({
   variable: "--font-sans",
 });
 
-/* ✅ Export metadata from external file */
+// Export metadata from server component
 export const metadata: Metadata = siteMetadata;
 
 export default function RootLayout({
@@ -31,12 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${playfair.variable} ${dmSans.variable}`}>
-        <MobileNavbar />
-        <Navbar />
-
-        <main>{children}</main>
-
-        <Footer />
+        {/* This is the server-rendered root → we delegate the client parts to a wrapper */}
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
