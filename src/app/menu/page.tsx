@@ -160,8 +160,8 @@ function MenuContent() {
         </div>
 
         <div className="relative z-10 text-center px-4 animate-fade-in-up">
-           <h1 className={`${playfair.className} text-[80px] md:text-[150px] font-black text-black tracking-tighter leading-[0.8] drop-shadow-[4px_4px_0px_rgba(255,255,255,0.5)]`}>
-             MENU
+           <h1 className={`${playfair.className} text-[60px] md:text-[150px] font-black text-black tracking-tighter leading-[0.8] drop-shadow-[4px_4px_0px_rgba(255,255,255,0.5)]`}>
+             Drive-Thru Menu
            </h1>
         </div>
       </section>

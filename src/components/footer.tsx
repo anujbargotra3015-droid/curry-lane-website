@@ -126,9 +126,19 @@ export default function Footer() {
         </div>
 
         {/* BOTTOM COPYRIGHT */}
-        <div className="mt-20 border-t border-white/10 pt-8 text-center text-sm text-gray-500">
-          © {new Date().getFullYear()} Curry Lane. All rights reserved.
-        </div>
+        {/* BOTTOM COPYRIGHT */}
+<div className="mt-20 border-t border-white/10 pt-8 text-center text-sm text-gray-500">
+  © {new Date().getFullYear()} Curry Lane, A product of{" "}
+  <Link
+    href="https://chandihospitality.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-white hover:underline transition"
+  >
+    Chandi Hospitality Group
+  </Link>
+</div>
+
       </div>
     </footer>
   );
