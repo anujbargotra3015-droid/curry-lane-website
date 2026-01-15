@@ -159,7 +159,7 @@ export default function HeroMenu() {
       {/* Header Section */}
       <div className="text-center pt-12 pb-8 px-4">
         <h2 className="font-serif-display text-4xl md:text-5xl font-bold text-[#EF2F2A] uppercase leading-tight tracking-wide mb-2">
-          EXPLORE THE FLAVORS
+          DRIVE-THRU MENU
           <br />
           OF CURRY LANE
         </h2>
